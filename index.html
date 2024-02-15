@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Abha Shukla">
+    <meta name="description" content="This is an interactive navigation menu for seamless user experience.">
+    <title>Responsive Landing Page</title>
+    <link rel="icon" href="images/html_logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+
+<body>
+    <header>
+        <div class="main">
+            <nav>
+                <ul class="new">
+                    <li><a href="#home" >Home</a></li>
+                    <li><a href="#about" target="_blank">About</a></li>
+                    <li><a href="#explore" target="_blank">Explore</a></li>
+                    <li><a href="#contact" target="_blank">Contact</a></li>
+                    <li><a href="#form" target="_blank">Form</a></li>
+                </ul>
+                <button class="register">
+                    <a href="#">Register</a>
+                </button>
+            </nav>
+            <div id="home">
+                <h1>Welcome to Abha's Captivating Digital Realm</h1>
+                <h2>A landing page beckoning exploration</h2>
+                <br>
+                <input type="email" name="email" placeholder="  Enter your email...">
+                <button><a href="#sign">Sign In</a></button>
+            </div>
+            <div id="about">
+                <h2>Let's begin the journey of discovering more.</h2>
+                <p>Life is too short. We should live it to the fullest.</p>
+            </div>
+            <div id="explore">
+                <h2>Explore and unravel more.</h2>
+            </div>
+            <div id="contact">
+                <h2>Contact me</h2>
+                <p>I'd love to hear your voice!</p>
+            </div>
+            <div id="form">
+                <form action="https://httpbin.org/get" method="get">
+                    <fieldset>
+                        <legend>Personal Info</legend>
+                        <p>
+                            <label for="firstName">First Name:</label>
+                            <input type="text" name="firstName" id="firstName" placeholder="first name" autocomplete="on"
+                                required>
+                        </p>
+                        <p>
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" name="lastName" id="lastName" placeholder="last name" autocomplete="on"
+                                required>
+                        </p>
+                        <p>
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" placeholder="your secret" required>
+                        </p>
+                        <p>
+                            <label for="phone">Phone:</label>
+                            <input type="tel" name="phone" id="phone" placeholder="3333333333"
+                                pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Send Me A Note</legend>
+                        <label for="message">Your Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="10"
+                            placeholder="Type your message here"></textarea>
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                    <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </div>
+        </div>
+    </header>
+</body>
+<script src="script.js"></script>
+</html>
